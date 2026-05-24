@@ -203,6 +203,7 @@
 | SNI | `www.10068.cn` | 快速订阅内置节点的SNI信息（留空则默认同`host`） | 
 | TYPE | `splithttp` | 快速订阅内置节点的传输协议信息（留空则默认为`ws`） | 
 | ALPN | `h3` | Alpn（留空则默认为`http/1.1`） | 
+| SCV | `true` | 是否跳过证书验证（留空则默认`false`） | 
 | ADD | `icook.tw:2053#官方优选域名` | 对应`addresses`字段 （支持多元素, 元素之间使用`,`或`换行`作间隔） | 
 | ADDAPI | [https://raw.github.../addressesapi.txt](https://raw.githubusercontent.com/cmliu/WorkerVless2sub/main/addressesapi.txt) | 对应`addressesapi`字段 （支持多元素, 元素之间使用`,`或`换行`作间隔） | 
 | ADDNOTLS | `icook.hk:8080#官方优选域名` | 对应`addressesnotls`字段 （支持多元素, 元素之间使用`,`或`换行`作间隔） | 
@@ -222,6 +223,7 @@
 | SOCKS5DATA | [https://raw.github.../socks5Data](https://raw.githubusercontent.com/cmliu/WorkerVless2sub/main/socks5Data) | Socks5代理池 | 
 | PS | `【请勿测速】` | 节点名备注消息 | 
 | PROXYIP | `proxyip.cmliussss.net` | 默认分配的ProxyIP, 多ProxyIP将随机分配（支持多元素, 元素之间使用`,`或`换行`作间隔） | 
+| PROXYIPAPI | `https://raw.cmliussss.com/Serv00_ProxyIP.txt` | 不支持多元素 | 
 | CMPROXYIPS | `proxyip.aliyun.cmliussss.net#HK` | 识别HK后分配对应的ProxyIP（支持多元素, 元素之间使用`,`或`换行`作间隔） | 
 | CFPORTS | `2053`,`2096`,`8443` | CF账户标准端口列表 |
 | URL302 | `https://t.me/CMLiussss` | 主页302跳转(支持多url, url之间使用`,`或`换行`作间隔, 小白别用) |
@@ -234,10 +236,26 @@
 [![Stargazers over time](https://starchart.cc/cmliu/WorkerVless2sub.svg?variant=adaptive)](https://starchart.cc/cmliu/WorkerVless2sub)
 
 # 🙏 特别鸣谢
-### 💖 赞助支持 - 提供云服务器维持[订阅转换服务](https://sub.cmliussss.net/)
-- [Alice Networks LTD](https://url.cmliussss.com/alice)
+### 🚀 Sponsored by SharonNetworks
 
-### 🛠 开源代码引用
+<a href="https://sharon.io/">
+  <img src="https://framerusercontent.com/assets/3bMljdaUFNDFvMzdG9S0NjYmhSY.png" width="30%" alt="sharon.io">
+</a>
+
+本项目的[订阅转换](https://sub.cmliussss.com/)后端由 SharonNetworks 提供支持 —— 专注亚太顶级回国优化线路，高带宽、低延迟直连中国大陆，内置强大高防 DDoS 清洗能力。
+
+SharonNetworks 为您的业务起飞保驾护航！
+
+#### ✨ 服务优势
+
+* 亚太三网回程优化直连中国大陆，下载快到飞起
+* 超大带宽 + 抗攻击清洗服务，保障业务安全稳定
+* 多节点覆盖（香港、新加坡、日本、台湾、韩国）
+* 高防护力、高速网络；港/日/新 CDN 即将上线
+
+想体验同款构建环境？欢迎 [访问 Sharon 官网](https://sharon.io) 或 [加入 Telegram 群组](https://t.me/SharonNetwork) 了解更多并申请赞助。
+
+## 🛠 开源代码引用
 - [SAKURA-YUMI](https://github.com/SAKURA-YUMI)
 - [EzSync](https://github.com/EzSync)
 - [ACL4SSR](https://github.com/ACL4SSR/ACL4SSR/tree/master/Clash/config)
